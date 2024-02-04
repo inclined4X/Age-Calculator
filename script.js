@@ -32,6 +32,15 @@ function calculateAge() {
     );
     return;
   }
+
+  const ageInMilliSeconds = today - birthDate;
+  const ageInSeconds = Math.floor(ageInMilliSeconds / 1000);
+  const ageInMinutes = Math.floor(ageInSeconds / 60);
+  const ageInHours = Math.floor(ageInMinutes / 60);
+  const ageInDays = Math.floor(ageInHours / 24);
+  const ageInweekS = Math.floor(ageInDays / 7);
+  const ageInMonths = Math.floor(ageInDays / 30.436875);
+  const ageInYears = Math.floor(ageInDays / 365.25);
 }
 
 const ageCalcuatorForm = document.getElementById("ageCalculator");
