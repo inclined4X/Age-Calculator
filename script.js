@@ -41,7 +41,17 @@ function calculateAge() {
   const ageInweekS = Math.floor(ageInDays / 7);
   const ageInMonths = Math.floor(ageInDays / 30.436875);
   const ageInYears = Math.floor(ageInDays / 365.25);
-}
+
+  // getting the result container id and result id
+  const resultContainer = document.getElementById("resultContainer");
+  const result = document.getElementById("result");
+
+  result.innerHTML = `
+    <div class = "result-item">
+        <h3>Age:</h3>
+        <p>{}</p>
+  
+  `
 
 const ageCalcuatorForm = document.getElementById("ageCalculator");
 ageCalcuatorForm.addEventListener("submit", (event) => {
