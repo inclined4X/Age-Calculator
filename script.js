@@ -47,11 +47,42 @@ function calculateAge() {
   const result = document.getElementById("result");
 
   result.innerHTML = `
+    
     <div class = "result-item">
         <h3>Age:</h3>
         <p>${ageInYears} Years ${ageInMonths % 12} Months ${
     ageInDays % 30
   } Days</p>
+    </div>
+
+    <div class = "result-item">
+        <h3>Months Passed:</h3>
+        <p>${ageInMonths}</p>
+    </div>
+
+    <div class = "result-item">
+        <h3>Weeks Passed:</h3>
+        <p>${ageInweekS}</p>
+    </div>
+
+    <div class = "result-item">
+        <h3>Days Passed:</h3>
+        <p>${ageInDays}</p>
+    </div>
+
+    <div class = "result-item">
+        <h3>Hours Passed:</h3>
+        <p>${ageInHours}</p>
+    </div>
+
+    <div class = "result-item">
+        <h3>Minutes Passed:</h3>
+        <p>${ageInMinutes}</p>
+    </div>
+     
+    <div class = "result-item">
+        <h3>Seconds Passed:</h3>
+        <p>${ageInSeconds}</p>
     </div>
   `;
 

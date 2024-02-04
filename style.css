@@ -67,10 +67,12 @@ button {
 
 .result h3 {
   color: #333;
-  font-size: 16px;
+
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .result p {
   font-size: 16px;
-  margin-left: 10px;
+  margin-bottom: 10px;
 }
